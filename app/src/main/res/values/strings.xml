@@ -62,4 +62,7 @@
     <string name="create_new_user">Create New User</string>
     <string name="order_dispatch">Order Dispatch</string>
     <string name="all_item_menu">All Item Menu</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_price">Item Price</string>
+    <string name="ingredients">Ingredients</string>
 </resources>

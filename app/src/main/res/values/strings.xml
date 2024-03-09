@@ -56,4 +56,10 @@
     <string name="name_of_owner">Name of Owner</string>
     <string name="name_of_restaurant">Name of Restaurant</string>
     <string name="email_or_phone_number">Email or Phone Number</string>
+    <string name="pending_order">Pending Order</string>
+    <string name="_30">30</string>
+    <string name="_10">10</string>
+    <string name="create_new_user">Create New User</string>
+    <string name="order_dispatch">Order Dispatch</string>
+    <string name="all_item_menu">All Item Menu</string>
 </resources>

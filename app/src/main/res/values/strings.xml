@@ -73,4 +73,5 @@
     <string name="admin_profile">Admin Profile</string>
     <string name="edit_your_profile">Edit Your Profile</string>
     <string name="click_here_to_edit">Click Here To Edit</string>
+    <string name="create_new_user_admin">Create New User Admin</string>
 </resources>

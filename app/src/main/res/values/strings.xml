@@ -65,4 +65,5 @@
     <string name="item_name">Item Name</string>
     <string name="item_price">Item Price</string>
     <string name="ingredients">Ingredients</string>
+    <string name="all_item">All Item</string>
 </resources>

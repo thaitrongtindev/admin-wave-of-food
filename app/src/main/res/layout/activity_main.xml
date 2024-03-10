@@ -268,7 +268,7 @@ Earning"
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView3"
+            android:id="@+id/cardViewProfile"
             android:layout_width="150dp"
             android:layout_height="85dp"
             android:layout_marginTop="172dp"
@@ -309,7 +309,7 @@ Earning"
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView4"
+            android:id="@+id/cardViewCreateUser"
             android:layout_width="150dp"
             android:layout_height="85dp"
             android:layout_marginTop="172dp"
@@ -317,7 +317,7 @@ Earning"
             app:cardCornerRadius="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.639"
-            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintStart_toEndOf="@+id/cardViewProfile"
             app:layout_constraintTop_toBottomOf="@id/cardviewLayout">
 
             <androidx.constraintlayout.widget.ConstraintLayout

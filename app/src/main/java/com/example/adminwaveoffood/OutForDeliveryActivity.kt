@@ -20,7 +20,9 @@ class OutForDeliveryActivity : AppCompatActivity() {
         val statusMoney = listOf<String>("received", "not Received", "pending")
 
         deliveryAdapter = DeliveryAdapter(ArrayList(customerName), ArrayList(statusMoney))
-
+        binding.btnBack.setOnClickListener {
+            finish()
+        }
         binding.rcvOutForDelivery.apply {
             layoutManager = LinearLayoutManager(context)
             adapter = deliveryAdapter

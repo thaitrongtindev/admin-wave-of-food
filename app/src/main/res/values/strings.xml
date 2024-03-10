@@ -66,4 +66,8 @@
     <string name="item_price">Item Price</string>
     <string name="ingredients">Ingredients</string>
     <string name="all_item">All Item</string>
+    <string name="out_for_delivery">Out For Delivery</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="not_received">Not Received</string>
+    <string name="delivered">Delivered</string>
 </resources>

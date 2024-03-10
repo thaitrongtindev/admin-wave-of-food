@@ -349,7 +349,7 @@ Earning"
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView5"
+            android:id="@+id/cardViewDelivery"
             android:layout_width="150dp"
             android:layout_height="85dp"
             android:layout_marginStart="25dp"

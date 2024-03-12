@@ -74,4 +74,7 @@
     <string name="edit_your_profile">Edit Your Profile</string>
     <string name="click_here_to_edit">Click Here To Edit</string>
     <string name="create_new_user_admin">Create New User Admin</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="quantity">Quantity</string>
+    <string name="accept">Accept</string>
 </resources>

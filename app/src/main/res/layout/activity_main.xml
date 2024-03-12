@@ -61,6 +61,7 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
+                    android:id="@+id/layoutPendingOrder"
                     android:layout_width="83dp"
                     android:layout_height="120dp"
                     android:layout_gravity="center"
@@ -101,6 +102,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/layoutCompletedOrder"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"
@@ -141,6 +143,7 @@ order"
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/layoutWholeTimeEarning"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
                     android:layout_height="120dp"

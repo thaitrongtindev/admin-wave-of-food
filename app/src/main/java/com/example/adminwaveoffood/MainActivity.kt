@@ -1,12 +1,8 @@
 package com.example.adminwaveoffood
 
-import android.app.Activity
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.databinding.DataBindingUtil
 import com.example.adminwaveoffood.databinding.ActivityMainBinding
 
@@ -40,6 +36,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.cardViewCreateUser.setOnClickListener {
             val intent = Intent(this, CreateUserActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.layoutPendingOrder.setOnClickListener {
+            val intent = Intent(this, PendingOrderActivity::class.java)
             startActivity(intent)
         }
     }

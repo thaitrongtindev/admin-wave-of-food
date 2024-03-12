@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.adminwaveoffood.databinding.ActivitySignUpBinding
+import com.example.adminwaveoffood.model.UserModel
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
@@ -75,6 +76,7 @@ class SignUpActivity : AppCompatActivity() {
     private fun createUserWithEmail(email: String, password: String) {
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener()  {
             task -> if (task.isSuccessful) {
+                saveUser()
                 Toast.makeText(this, "Account created successfully", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
@@ -83,5 +85,18 @@ class SignUpActivity : AppCompatActivity() {
 
         }
         }
+    }
+
+    private fun saveUser() {
+        //get text from edit text
+        username = binding.edtName.text.toString().trim()
+        nameOfRestaurant = binding.edtNameRestaurant.text.toString().trim()
+        email = binding.edtEmailOfPhoneNumber.text.toString().trim()
+        password = binding.edtPassword.text.toString().trim()
+
+        val user = UserModel(username, nameOfRestaurant, email, password)
+        val userId = auth.currentUser?.uid
+        //save dataa of user
+        database.child("user").child(userId.toString()).setValue(user)
     }
 }

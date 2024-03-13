@@ -393,7 +393,7 @@ Earning"
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView6"
+            android:id="@+id/cardViewLogOut"
             android:layout_width="150dp"
             android:layout_height="85dp"
             android:layout_marginTop="308dp"

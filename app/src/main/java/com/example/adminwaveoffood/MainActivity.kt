@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.adminwaveoffood.databinding.ActivityMainBinding
+import com.google.firebase.Firebase
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.auth
 
 class MainActivity : AppCompatActivity() {
 
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var auth : FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -42,6 +46,10 @@ class MainActivity : AppCompatActivity() {
         binding.layoutPendingOrder.setOnClickListener {
             val intent = Intent(this, PendingOrderActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.cardViewLogOut.setOnClickListener {
+
         }
     }
 

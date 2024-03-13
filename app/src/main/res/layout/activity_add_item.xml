@@ -74,31 +74,14 @@
             app:layout_constraintTop_toBottomOf="@+id/editItemName"
             tools:ignore="HardcodedText" />
 
-        <EditText
-            android:id="@+id/editItemImage"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edittextshape"
-            android:drawablePadding="10dp"
-            android:gravity="start"
-            android:hint="@string/item_price"
-            android:padding="15dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:textStyle=""
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editItemPrice"
-            tools:ignore="HardcodedText" />
+
 
         <ImageView
             android:id="@+id/imageAdd"
             android:layout_width="175dp"
             android:layout_height="115dp"
             android:src="@drawable/addimage"
-            app:layout_constraintTop_toBottomOf="@id/editItemImage"
+            app:layout_constraintTop_toBottomOf="@id/editItemPrice"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

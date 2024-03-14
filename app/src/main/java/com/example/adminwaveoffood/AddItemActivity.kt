@@ -87,7 +87,8 @@ class AddItemActivity : AppCompatActivity() {
                         foodPrice = foodPrice,
                         foodDescription = foodDescription,
                         foodIngredient = foodIngredient,
-                        foodImage = imageUri.toString()
+                        foodImage = downloadImage.toString()
+//                        foodImage = imageUri.toString()
                     )
                     newItemKey?.let {
                         key ->

@@ -69,7 +69,8 @@ class LoginActivity : AppCompatActivity() {
         //login with google
         // initalize google sign in
         val goolgeSignInOption = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("956709816198-d1kk66715kpcq6gncg6cgen8t8504pt8.apps.googleusercontent.com")
+
+            .requestIdToken("956709816198-mr7hkeei2ohdgrtldhnlub2ca54i36lr.apps.googleusercontent.com")
             .requestEmail().build()
         googleSignInClient = GoogleSignIn.getClient(this, goolgeSignInOption)
 
@@ -99,6 +100,8 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     val user: FirebaseUser
                     user = auth.currentUser!!
+                    Toast.makeText(this, "Login Google button", Toast.LENGTH_SHORT).show()
+                    Log.e("TAG","Login Google button"  )
                     updateUi(user)
                 } else {
                     Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()

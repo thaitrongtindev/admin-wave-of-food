@@ -28,7 +28,7 @@ class MenuItemAdapter(
 
 
                 minusButton.setOnClickListener {
-                    if (itemQuantities.size > 1) {
+                    if (itemQuantities.size > 1 ) {
                         itemQuantities[position]--
                         tvItemCartQuantities.text = itemQuantities[position].toString()
 
